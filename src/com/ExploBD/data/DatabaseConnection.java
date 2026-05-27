@@ -5,10 +5,16 @@ import javax.swing.JOptionPane;
 import java.io.File;
 
 public class DatabaseConnection {
-
-    private static final String DB_PATH = "C:\\Users\\Mahina\\OneDrive\\Desktop\\ExploBD_2\\ExploBD_2\\user_info.db";
-    private static final String DATABASE_URL = "jdbc:sqlite:" + DB_PATH;
-    private static final String DB_DIRECTORY = "C:\\Users\\Mahina\\OneDrive\\Desktop\\ExploBD_2\\ExploBD_2";
+//
+//    private static final String DB_PATH = "C:\\Users\\Mahina\\OneDrive\\Desktop\\ExploBD_2\\ExploBD_2\\user_info.db";
+//    private static final String DATABASE_URL = "jdbc:sqlite:" + DB_PATH;
+//    private static final String DB_DIRECTORY = "C:\\Users\\Mahina\\OneDrive\\Desktop\\ExploBD_2\\ExploBD_2";
+    
+    // This will look for the database inside a "data" folder in your project directory
+private static final String DB_DIRECTORY = "data";
+private static final String DB_PATH = DB_DIRECTORY + File.separator + "user_info.db";
+private static final String DATABASE_URL = "jdbc:sqlite:" + DB_PATH;
+    
     private static boolean tablesCreated = false;
 
     public static final String[] SECURITY_QUESTIONS = {
