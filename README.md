@@ -1,5 +1,5 @@
 
-# ExploBD — Explore Bangladesh 🇧🇩
+# ExploBD — Explore Bangladesh
 
 Our 2nd year OOP group project. The goal was to make a travel companion app specifically for Bangladesh — something useful for both locals and foreigners, solo travellers and groups.
 
