@@ -47,9 +47,9 @@ If it breaks, it's most likely the library paths — re-add the JARs from `lib/`
 
 ## Team
 
-**Nusrat Jahan Mahina** — overall architecture, database design, destination explorer, user system, travel groups, checklist, messaging, notifications
+**Nusrat Jahan Mahina** — overall architecture ,destination explorer, user system, create and find  groups,tracking groups , checklist, messaging, notifications
 
-**Sanzida Afroz** — friends system, expense splitting
+**Sanzida Afroz** — friends system, expense splitting, group history
 
 **Nazifa Rahman** — recommendation system
 
