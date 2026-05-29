@@ -1,96 +1,57 @@
-
 # ExploBD — Explore Bangladesh
 
-Our 2nd year OOP group project. The goal was to make a travel companion app specifically for Bangladesh — something useful for both locals and foreigners, solo travellers and groups.
+A desktop app to help people explore and plan trips around Bangladesh. Built with Java Swing and SQLite for our 2nd year OOP course.
 
 ---
 
-## The Idea
+## The original idea
 
-The original vision was big. A complete travel guide for Bangladesh that covers everything someone might need:
-
-- Destination explorer by division
-- Emergency services nearby
-- Local translator
-- Maps and navigation
-- Famous local food guides
-- Ride/transport options
-- Travel checklists
-- Group trip planning
-- Expense splitting
-- Recommendations based on your travel style
-
-Basically one app where you don't need to open 10 different things just to plan a trip. Designed to be useful for foreigners visiting Bangladesh just as much as locals exploring their own country.
-
-But since this was an OOP course project and we couldn't use external APIs or paid services, a lot of those features had to be cut. So we focused on what we could build properly with pure Java and a local SQLite database.
+The goal was to build a complete travel companion app for Bangladesh — something that holds your hand through the entire trip from start to finish. You open the app, pick where you want to go, get a full guide of that place, find out what food to try, how to get there, what to do in an emergency, how to communicate if you don't speak Bangla, plan it with your friends, split the costs, and track everything in one place. No switching between apps, no searching around. Just one app that covers the whole journey.
 
 ---
 
-## What we actually built
+## Why it ended up smaller
 
-- Browse tourist destinations across all divisions — Barishal, Chittagong, Khulna, Mymensingh, Rajshahi, Rangpur, Sylhet — with photos
+This was an OOP course project so the main focus was applying OOP concepts properly, not building a full product. We also couldn't use any external APIs — no maps, no live data, no translation services. Anything that needed internet or a third party service had to go. So we stripped it down to what we could build completely on our own using just Java and a local SQLite database.
+
+---
+
+## What we built
+
+- Browse tourist spots by division — Barishal, Chittagong, Khulna, Mymensingh, Rajshahi, Rangpur, Sylhet — with photos
 - User accounts — register, login, edit profile
 - Friends — add friends, send and receive friend requests
 - Travel groups — create a group, invite friends, vote on destinations
-- Destination recommendations based on travel style
+- Recommendations based on travel style
 - Expense splitting among group members
 - Trip checklist
 - Messaging inside groups
 - Notifications
 - Log completed trips
 
-It's not everything we planned but we tried to make the core of it work well.
-
 ---
 
-## Tech used
+## How to run
 
-- Java with Swing for the desktop UI
-- SQLite as the local database
-- sqlite-jdbc to connect Java to SQLite
-- AbsoluteLayout (NetBeans GUI library)
-- Built in NetBeans IDE
+You'll need Java JDK 8 or above and NetBeans.
 
----
-
-## Folder structure
-
-```
-ExploBD/
-├── src/            → all the Java code
-├── data/           → the SQLite database file
-├── lib/            → the JAR files needed to run
-│   ├── sqlite-jdbc-3.51.1.0.jar
-│   └── AbsoluteLayout.jar
-└── nbproject/      → NetBeans project settings
-```
-
----
-
-## How to run this
-
-You'll need Java JDK 8 or above and NetBeans installed.
-
-1. Clone the repo
+1. Clone or download the repo
 2. Open NetBeans → File → Open Project → select the folder
-3. Go to Project Properties → Libraries → remove any broken references → Add JAR/Folder → add both JARs from the `lib/` folder
-4. Make sure `DatabaseConnection.java` points to the `.db` file inside the `data/` folder
-5. Clean and Build, then run
+3. Go to Project Properties → Libraries → remove broken references → Add JAR/Folder → add both JARs from the `lib/` folder
+4. Check that `DatabaseConnection.java` points to the `.db` file in the `data/` folder
+5. Clean and Build → Run
 
-If something breaks it's probably the library paths — just re-add the JARs from `lib/` and it should be fine.
+If it breaks, it's most likely the library paths — re-add the JARs from `lib/` and it should work.
 
 ---
 
 ## Team
 
-**Nusrat Jahan Mahina -**
-Core of the project — destination explorer, travel groups, user system, checklist, messaging, notifications, database design, and overall architecture
+**Nusrat Jahan Mahina** — overall architecture, database design, destination explorer, user system, travel groups, checklist, messaging, notifications
 
-**Sanzida Afroz -**
-Friends system — add friends, send and receive friend requests, expense splitting
+**Sanzida Afroz** — friends system, expense splitting
 
-**Nazifa Rahman -**
-Recommendation system — destination suggestions based on travel style
+**Nazifa Rahman** — recommendation system
 
 ---
 
